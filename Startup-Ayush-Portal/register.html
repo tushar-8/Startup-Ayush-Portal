@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <main>
+       <div class="back">
+        <a href="struct.html"><img type="image" src="img/left.png" width="20"><span id="spanid">Back to Home </span></a>
+        </div>
+        <section class="wrapper">
+            <div class="form signup">
+              <header>Signup</header>
+              <form name="f1" action = "frontendconnection.php" onsubmit = "return validation()" method = "POST">
+                <input type="text" placeholder="Full Name" required id="fullname" name="fullname"/>
+                <label for="ls">Login As:</label>
+                <select name="opt" id="opt">
+                <option value="invest">Investors</option>
+                <option value="accel">Accelerators</option>
+                <option value="pu">Public User</option>
+                <option value="startup">Startup</option>
+                </select>
+                <input type="text" placeholder="Email address" required id="email" name="email"/>
+                <input type="password" placeholder="Password" required id="password" name="password" />
+                <!-- <div class="checkbox">
+                  <input type="checkbox" id="signupCheck" />
+                  <label for="signupCheck">I accept all terms & conditions</label>
+                </div> -->
+                <input type="submit" value="Signup" />
+              </form>
+            </div>
+            <div class="form login">
+              <header>Login</header>
+              <form action="frontendconnection.php" method="post">
+                <input type="text" placeholder="Email address" required id="email" name="email"/>
+                <input type="password" placeholder="Password" required id="password" name="password"/>
+                <a href="#">Forgot password?</a>
+                <input type="submit" value="Login" />
+              </form>
+            </div>
+        </div>
+            <script>
+               function validation()  
+            {  
+                var id=document.f1.fullname.value;  
+                var ps=document.f1.email.value;  
+                var ps=document.f1.password.value;  
+                if(id.length=="" && ps.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+              const wrapper = document.querySelector(".wrapper"),
+                signupHeader = document.querySelector(".signup header"),
+                loginHeader = document.querySelector(".login header");
+              loginHeader.addEventListener("click", () => {
+                wrapper.classList.add("active");
+              });
+              signupHeader.addEventListener("click", () => {
+                wrapper.classList.remove("active");
+              });
+            </script>
+   
+    
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+body{
+    margin: 20px;
+    background-image: url(back.png);
+}
+div.container-fluid{
+    background-color: whitesmoke;
+}
+a.nav-link{
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.card{
+    transition: all 0.3s ;
+}
+.card:hover{
+    transform: scale(1.10);
+}
+.government{
+    color: whitesmoke;
+}
