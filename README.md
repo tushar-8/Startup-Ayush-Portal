@@ -1,1 +1,2 @@
 # Startup-Ayush-Portal
+Startup AYUSH portal is to be a one-stop platform for all stakeholders (Startups, Investors, Incubators, Accelerators, Government Agencies, and Public Users) in the AYUSH system to interact and collaborate in a highly dynamic environment. The portal is directed to provide a collaborative platform for all the stakeholders of the AYUSH startups to have an interactive engagement to enhance and bolster the network.
